@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="StyleSheet" href="StyleSheet.css">
+    <title>Thomas Corker</title>
+    <script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+            if (name === '')
+            {
+                name = 'world';
+            }
+            document.querySelector('#result').innerHTML = 'Hello, ' + name + '!';
+        }
+    </script>
+  </head>
+  <body>
+    <div class="form">
+      <form onsubmit="greet(); return false;">
+          <input type="text" id="name" placeholder="Name">
+          <input type="submit">
+      </form>
+    </div>
+    <div id="result">
+        Hello!
+    </div>
+    <h1>Thomas Corker</h1>
+    <p>This is my webpage!</p>
+    <h3>Interests</h3>
+    <p>I am a year 9 student, i am really into computers and how they work.</p>
+    <p>Some interests out of school I have is cricket, F1 and gaming.</p>
+    <a href="https://www.cricket.com.au/">Cricket Australia</a>
+    <p>This is my Dog!</p>
+    <img src="Sleepy Puppy.jpg" alt="A dog Sleeping" width="600">
+  </body>
+</html>
